@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Lista dos meus esportes favoritos</h1>
+    <!-- Listas ordenadas(ol) e não ordenadas(ul) -->
+    <ol type="I">  <!--(1, I,i, A,a)-->
+        <li>Futebol</li>
+        <ul type="disc"> <!--(disc, circle e square)-->
+            <li>Santos F.C</li>
+            <li>Seleção Brasileira</li>
+            <li>Real Madrid</li>
+            <li>Manchester United</li>
+            <ul type="square">
+                <li>Cristiano Ronaldo</li>
+            </ul>
+        </ul>
+        <br>
+        <li>Formula 1</li>
+        <ul type="disc">
+            <li>Ferrari</li>
+            <li>Mercedes</li>
+                <ul type="square">
+                    <li>Lewis Hamilton</li>
+                </ul>
+        </ul>
+        <br>
+        <li>Basquete</li>
+        <ul type="disc">
+            <li>Golden State Warriors</li>
+                <ul type="square">
+                    <li>Stephen Curry</li>
+                </ul>
+            <li>Chicago Bulls</li>
+            <li>Toronto Raptors</li>
+        </ul>
+
+    </ol>
+    <br>
+    <h2>Listas podem começar do meio</h2>
+    <!-- O "start" é numérico! Logo para começar com a letra c, por exemplo. O paramêtro deve ser "start="3" e não start="c"." -->
+    <ol start="19">
+        <li>Estádio</li>
+        <li>Grama</li>
+        <li>Trave</li>
+        <li>Arquibancada</li>
+    </ol>
+    <p>Com letra</p>
+    <ol type="A" start="13">
+        <li>Iluminação</li>
+        <li>Segurança</li>
+        <li>Infraestrutura</li>
+    </ol>
+    <p>Pode ser decrecente também</p>
+    <ol reversed start="77">
+        <li>Cartão Amarelo</li>
+        <ul type="circle">
+            <li>3 amarelos</li>
+        </ul>
+        <li>Cartão Vermelho</li>
+        <ul type="circle">
+            <li>suspenção direta</li>
+        </ul>
+        <li>Apito</li>
+        <li>Substituição</li>
+    </ol>
+    <br>
+    <h1>Termos do Futebol</h1> 
+    <!-- Lista de definições -->
+    <dl>
+        <dt>Box-to-box</dt>
+        <dd>Jogador que vai de área à área</dd>
+        <dt>Primeiro volante</dt>
+        <dd>Volante de marcação</dd>
+        <dt>Segundo volante</dt>
+        <dd>Volante de criação</dd>
+    </dl>
+</body>
+</html>

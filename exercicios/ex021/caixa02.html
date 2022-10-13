@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(183, 216, 255);
+            color: darkblue;
+            margin: 0px;
+        }
+        h1 {
+            box-shadow: 2px 2px 2px 2px rgba(77, 123, 160, 0.253);
+            width: 130px;
+            border-radius: 10px;
+            padding: 3px;
+            margin: 10px;
+        }
+
+        span {
+            font-family: 'Mr Dafoe', cursive;
+         }
+
+
+        header {
+            border-radius: 10px;
+            background-color: rgb(120, 194, 255);
+            margin: 10px;
+            padding: 1px 0px 10px 10px;
+            box-shadow: 2px 2px 1px 1px rgba(70, 116, 153, 0.486);
+        }
+
+        nav {
+            border-radius: 10px;
+            display: inline;
+            background-color: lightblue;
+            padding: 1px;
+            box-shadow: 1px 1px 5px 1px rgba(92, 114, 121, 0.541);
+        }
+
+        nav > a {
+            padding: 25px;
+            text-decoration: none;
+            color: rgb(52, 52, 240);
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(120, 194, 255);
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 1px rgb(70, 116, 153);
+        }
+
+        section > p {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 2em;
+            text-decoration: underline;
+            margin: 10px;
+        }
+
+
+        article {
+            background-color: rgb(33, 140, 228);
+            text-align: justify;
+            padding: 10px;
+            border-radius: 30px 2px;
+        }
+        article > p {
+            margin: 0px 0px 30px 0px;
+        }
+
+        article > aside {
+            background-color: aqua;
+            padding: 5px;
+            margin: 5px 20px;
+            border-radius: 5px;
+        }
+        article > aside > p {
+            margin: 0px;
+        }
+
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            background-color: rgba(36, 70, 97, 0.315);
+            width: 100px;
+            height: 100px;
+            margin: 30px auto;
+            border-radius: 50%;
+            box-shadow: inset 10px 10px 10px 20px rgb(70, 116, 153);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu <span>site</span></h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Todas as notícias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticías de Bebedouro</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam culpa voluptatum, fugiat sit magnam ab non qui. Ab culpa quam corrupti, molestiae tempore repellat commodi id suscipit similique quidem reiciendis?</p>
+                <aside>
+                    <p>Escrito po Beltrano e Ciclano</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

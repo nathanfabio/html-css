@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {
+            background-color: lightcoral;
+            height: 300px;
+            width: 300px;
+            border: 5px solid lightseagreen;
+            padding: 10px 30px 50px 70px;
+            margin: auto;
+            /* auto= centralizar */
+            outline: dashed 10px red;
+            /* O outline fica entre a border e a margin, mas fica dentro da margin */
+        }
+        
+        a {
+            border: 5px solid blueviolet;
+            padding: 5px 5px 5px 5px;
+            margin: 30px 10px;
+            /* Colocando dois valores, o 1° é TOP e BOTTOM  e o 2° é RIGHT E LEFT*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level.</a> Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>
