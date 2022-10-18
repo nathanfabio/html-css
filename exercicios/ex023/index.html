@@ -11,14 +11,10 @@
         }
 
         table {
-            width: 600px;
-            height: 150px;
+            width: 400px;
+            height: 400px;
             border-collapse: collapse;
-            border: 3px solid blue;
-        }
-
-        td.bloco {
-            background-color: lightblue;
+            border: 2px solid black;
         }
 
         tr.linha {
@@ -28,6 +24,8 @@
         td {
             border: 2px solid black;
             padding: 2px;
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical */
         }
     </style>
 </head>
@@ -44,7 +42,7 @@
         <tr>  <!--Primeira linha-->
             <td>A1</td>
             <td>B1</td>
-            <td class="bloco">C1</td>
+            <td>C1</td>
         </tr>
         <tr class="linha">
             <td>A2</td>
@@ -52,7 +50,7 @@
             <td>C2</td>
         </tr>
         <tr>
-            <td class="bloco">A3</td>
+            <td>A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
